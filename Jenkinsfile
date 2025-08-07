@@ -20,7 +20,7 @@ sh 'mvn test'
 stage('Code Analysis') {
 steps {
 echo 'This is the analysis'
-sh ' mvn clean verify sonar:sonar   -Dsonar.projectKey=HelloWorldTest  -Dsonar.projectName=”HelloWorldTest”   -Dsonar.host.url=http://localhost:9000   -Dsonar.token= sqp_e509ca338540d3ee27a37ce294aab53cae961360'
+sh ' mvn clean verify sonar:sonar   -Dsonar.projectKey=HelloWorldTest  -Dsonar.projectName=”HelloWorldTest”   -Dsonar.host.url=http://localhost:9000   -Dsonar.token=sqp_e509ca338540d3ee27a37ce294aab53cae961360'
 }
 }
 stage('Deliver') {
